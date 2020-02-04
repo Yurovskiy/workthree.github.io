@@ -1,0 +1,52 @@
+
+
+@font-face {
+    font-family: 'pantonbold';
+    src: url('panton_bold-webfont.eot');
+    src: url('panton_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('panton_bold-webfont.woff2') format('woff2'),
+         url('panton_bold-webfont.woff') format('woff'),
+         url('panton_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'pantonlight';
+    src: url('panton_light-webfont.eot');
+    src: url('panton_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('panton_light-webfont.woff2') format('woff2'),
+         url('panton_light-webfont.woff') format('woff'),
+         url('panton_light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'pantonregular_italic';
+    src: url('panton_regular_italic-webfont.eot');
+    src: url('panton_regular_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('panton_regular_italic-webfont.woff2') format('woff2'),
+         url('panton_regular_italic-webfont.woff') format('woff'),
+         url('panton_regular_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'pantonregular';
+    src: url('panton-webfont.eot');
+    src: url('panton-webfont.eot?#iefix') format('embedded-opentype'),
+         url('panton-webfont.woff2') format('woff2'),
+         url('panton-webfont.woff') format('woff'),
+         url('panton-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

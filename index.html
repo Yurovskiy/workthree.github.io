@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 no-js"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 no-js"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Rise Up</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <link href="img/favicon.ico" rel="icon">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href='fonts/stylesheet.css' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+    
+    <!-- Modal -->
+
+    <div id="modal_req_form" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal_width">
+            <div class="modal-content">
+                <div class="modal_sett">
+                    <h4>
+                        Please upload your files using your preferable a file-sharing service <br><b>(eg. sendspace.com, dropbox.com).</b>
+                    </h4> 
+                    <p>
+                        Please only send full WAV files, requests containing mp3 files will not be taken into account and automatically deleted. Include the links to your master files in the request below
+                    </p>
+                    <form id="feedback_form_1" name="ajaxform" action="" method="POST">
+                        <input class="name" name="name" placeholder="Your name" type="name" required="required">
+                        <input class="phone" name="phone" placeholder="Your phone number" type="number" required="required">
+                        <input class="message" name="message" placeholder="Details" type="text" required="required">
+                        <input class="send_upload" type="submit" value="Send">
+                        <button class="cancel" type="button" data-dismiss="modal">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Audio Modal -->
+
+    <div id="modal_audio" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal_audio_width">
+            <div class="modal-content">
+                <div class="modal_audio_sett">
+                    <div class="audio_left">
+                        <button class="closed" type="button" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h2>Before</h2>
+                        <ul>
+                            <li>
+                                <audio controls>
+                                    <source src="../../../audio/teeyro - night.mp3" type="audio/mpeg">
+                                </audio>
+                                <a download="audio/guomh 4.mp3" href="../../../audio/teeyro - night.mp3">
+                                    <button>
+                                        <img src="img/download_icon.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <audio controls>
+                                    <source src="../../../audio/teeyro - hit70's.mp3" type="audio/mpeg">
+                                </audio>
+                                <a download="audio/guomh 4.mp3" href="../../../audio/teeyro - hit70's.mp3">
+                                    <button>
+                                        <img src="img/download_icon.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <audio controls>
+                                    <source src="../../../audio/teeyro - IDkwia2.mp3" type="audio/mpeg">
+                                </audio>
+                                <a download="audio/guomh 4.mp3" href="../../../audio/teeyro - IDkwia2">
+                                    <button>
+                                        <img src="img/download_icon.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <audio controls>
+                                    <source src="../../../audio/teeyro - guomh 4.mp3" type="audio/mpeg">
+                                </audio>
+                                <a download="audio/guomh 4.mp3" href="../../../audio/teeyro - guomh 4">
+                                    <button>
+                                        <img src="img/download_icon.png">
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="audio_right">
+                        <h2>After</h2>
+                        <ul>
+                            <li>
+                                <audio controls>
+                                    <source src="audio/nigth.mp3" type="audio/mpeg">
+                                </audio>
+                                <a download="audio/guomh 4.mp3" href="audio/guomh 4.mp3">
+                                    <button>
+                                        <img src="img/download_icon.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <audio controls>
+                                    <source src="audio/hit.mp3" type="audio/mpeg">
+                                </audio>
+                                <a download="audio/guomh 4.mp3" href="audio/guomh 4.mp3">
+                                    <button>
+                                        <img src="img/download_icon.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <audio controls>
+                                    <source src="audio/IDkwia2.mp3" type="audio/mpeg">
+                                </audio>
+                                <a download="audio/guomh 4.mp3" href="audio/guomh 4.mp3">
+                                    <button>
+                                        <img src="img/download_icon.png">
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <audio controls>
+                                    <source src="audio/guomh 4.mp3" type="audio/mpeg">
+                                </audio>
+                                <a download="audio/guomh 4.mp3" href="audio/guomh 4.mp3">
+                                    <button>
+                                        <img src="img/download_icon.png">
+                                    </button>
+                                </a>    
+                            </li>
+                        </ul>   
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <!-- Header -->
+
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="hdr_left">
+                        <img src="img/logo.png" alt="logo">
+                        <p>
+                            mixing and mastering studio
+                        </p>
+                    </div>
+                    <div class="hdr_right">
+                        <ul>
+                            <li>
+                                <a href="http://vk.com">
+                                    VKontakte
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://facebook.com">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://soundcloud.com">
+                                    Soundcloud
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+
+    <div class="container-fluid">
+        <div id="navMenu" class="row defaultMenu">
+            <div class="container">
+                <nav class="my-nav navbar-inverse">
+                    <div class="navbar-header">
+                        <button type="button" class="collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <div class="visible-xs glyphicon glyphicon-th-list"></div>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="fixedNav">
+                            <li>
+                                <a href="#about">
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#instruction">
+                                    How it works
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#service">
+                                    Our services
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#rates">
+                                    Our rates
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#our_gear">
+                                    Our gear
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#testimonials">
+                                    Testimonials
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>  
+            </div>
+        </div>
+    </div> 
+
+    <!-- Parallax -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="home" class="bg_parralax" data-type="background" data-speed="10"></div>  
+        </div>
+    </div>
+
+    <!-- Tagline -->
+
+    <div class="container">
+        <div class="row tagline">
+            <p>We Have Faces, Ears And Soul</p>
+            <p>We Are Humans</p>
+            <p>We Are Rise Up</p>
+            <a class="button_modal" data-target="#modal_req_form" data-toggle="modal">Try us! We are free</a>
+        </div>
+    </div> 
+
+    <!-- About -->
+
+    <div id="about" class="container-fluid about">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <h2 class="labels">About us</h2>
+                            <p>Mastering is an integral part of every music production process. Only after being properly mixed down and mastered the track gets a «second breath» and is ready to be broadcasted on public, be it a club soundsystem or a radio station.</p>
+                            <p>It is often happen that after listening to the track for hours and days when actively working on the project your ears start to play bad tricks with you, making the mastering process very difficult or in some cases even impossible.</p>
+                            <p>A right decision for every musician is to send the track for mastering to professionals, who will have a clear view and a vast amount of equipment to suit all needs.</p>
+                            <p><b>Experience of Rise Up Mastering engineers is 8 years of painstaking work in the domain of audio development and audio design, mixing down and mastering of individual tracks and dj mixes…</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <!-- Instruction -->
+
+    <div id="instruction" class="container-fluid instruction">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <h2 class="labels">
+                        How it works
+                    </h2>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="row">
+                            <h3><span>Step 1 –</span> Upload</h3>
+                            <div class="column_circle">
+                                <img class="ico-reg" class="" src="img/upload_ico.png">
+                                <img class="ico-alt" src="img/upload_ico_h.png">
+                            </div>
+                            <p>The Studio specialises<br> in mastering dance music (EDM),<br> techno mastering, hip hop,<br> reggae, indie, folk, pop, rock.</p>
+                            <a class="button_modal" data-target="#modal_req_form" data-toggle="modal">Send your files now</a>      
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="row">
+                            <h3><span>Step 2 –</span> Listen</h3>
+                            <div class="column_circle">
+                                <img class="ico-reg" class="" src="img/listen_ico.png">
+                                <img class="ico-alt" src="img/listen_ico_h.png">
+                            </div>
+                            <p>The Studio specialises<br> in mastering dance music (EDM),<br> techno mastering, hip hop,<br> reggae, indie, folk, pop, rock.</p>
+                            <a class="button_modal" data-target="#modal_audio" data-toggle="modal">
+                                Before/after examples
+                            </a>       
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="row">
+                            <h3><span>Step 3 –</span> Buy <b>(If you like it)</b></h3>
+                            <div class="column_circle">
+                                <img class="ico-reg" class="" src="img/buy_ico.png">
+                                <img class="ico-alt" src="img/buy_ico_h.png">
+                            </div>
+                            <p>The Studio specialises<br> in mastering dance music (EDM),<br> techno mastering, hip hop,<br> reggae, indie, folk, pop, rock.</p>
+                            <a class="button_modal" data-target="#modal_req_form" data-toggle="modal">
+                                Buy now
+                            </a>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service -->
+
+    <div id="service" class="container-fluid service">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <h2 class="labels">
+                        Our services
+                    </h2>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="services">
+                                <button class="display_block">
+                                    <img src="img/mastering.jpg">
+                                    <div class="display_block__space_aligne">
+                                        <h3>Mastering</h3>
+                                    </div>
+                                </button>
+                                <button class="display_hover">
+                                    <img src="img/mastering_h.jpg">
+                                    <div class="display_hover__space_aligne">
+                                        <h3>Mastering</h3>
+                                        <ul>
+                                            <li>20 EUR — 1  track </li>
+                                            <li>38 EUR — 2 track</li>
+                                            <li>56 EUR — 3 track</li>
+                                            <li>85 EUR —  up  to 5 tracks</li>
+                                            <li>(17 eur per track) UP TO 5 TRACKS</li>
+                                        </ul>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="services">
+                                <button class="display_block">
+                                    <img src="img/dj_mix_master.jpg">
+                                    <div class="display_block__space_aligne">
+                                        <h3>DJ Mix mastering</h3>
+                                    </div>
+                                </button>
+                                <button class="display_hover">
+                                    <img src="img/dj_mix_master_h.jpg">
+                                    <div class="display_hover__space_aligne space_aligne_alt">
+                                        <h3>DJ Mix mastering</h3>
+                                        <ul>
+                                            <li>10 EUR per 80 minutes record</li>
+                                        </ul>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="services">
+                                <button class="display_block">
+                                    <img src="img/stem_master.jpg">
+                                    <div class="display_block__space_aligne">
+                                        <h3>Stem – mastering</h3>
+                                    </div>
+                                </button>
+                                <button class="display_hover">
+                                    <img src="img/stem_master_h.jpg">
+                                    <div class="display_hover__space_aligne space_aligne_alt">
+                                        <h3>Stem – mastering</h3>
+                                        <ul>
+                                            <li>2-8  stems — 40 EUR per track </li>
+                                            <li>Up to 8 stems— 50 EUR per track</li>
+                                        </ul>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="row">
+                            <div class="services">
+                                <button class="display_block">
+                                    <img src="img/mixing.jpg">
+                                    <div class="display_block__space_aligne">
+                                        <h3>Mixing</h3>
+                                    </div>
+                                </button>
+                                <button class="display_hover">
+                                    <img src="img/mixing_h.jpg">
+                                    <div class="display_hover__space_aligne">
+                                        <h3>Mixing</h3>
+                                        <ul>
+                                            <li>8-20 tracks— 45 EUR</li>
+                                            <li>20-30 tracks — 115 EUR</li>
+                                            <li>30+ tracks — 210 EUR</li>
+                                            <li>85 EUR —  up  to 5 tracks</li>
+                                        </ul>
+                                        <p>
+                                            *mastering services are already included 
+                                        </p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rates -->
+
+    <div id="rates" class="container-fluid rates">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <h2 class="labels">Our rates</h2>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="rates_bg">
+                            <h4>Free Sample</h4>
+                            <h3>0</h3>
+                            <p>2 minutes Simple</p>
+                            <a class="button_modal" data-target="#modal_audio" data-toggle="modal" href="#">
+                                Try now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="rates_bg">
+                            <h4>1-2 Tracks</h4>
+                            <h3>17</h3>
+                            <p>Per Track</p>
+                            <a class="button_modal" data-target="#modal_req_form" data-toggle="modal" href="#">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="rates_bg">
+                            <h4>5 – 9 Tracks</h4>
+                            <h3>46</h3>
+                            <p>Per Track</p>
+                            <a class="button_modal" data-target="#modal_req_form" data-toggle="modal" href="#">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="rates_bg">
+                            <h4>10 + Tracks</h4>
+                            <h3>128</h3>
+                            <p>Per Track</p>
+                            <a class="button_modal" data-target="#modal_req_form" data-toggle="modal" href="#">
+                                Buy now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Gear -->
+
+    <div id="our_gear" class="container-fluid our_gear" >
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <h2 class="labels">Our gear</h2>
+                    <div class="col-lg-7 col-md-8 col-sm-7 hidden_block">
+                        <div class="row">
+                            <img src="img/our_gear_img_1.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <img src="img/our_gear_img_2.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <img src="img/our_gear_img_3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-5">
+                        <div class="row">
+                            <p>
+                                Apple Mac Pro 2010 (Quad Core 2.8)<br> RME Hammerfall DSP Multiface II<br> Alesis M1 Mk II Active<br> AKG K-240S<br> Audio-Technica ATH-M40FS
+                            </p>
+                            <p> 
+                                UAD2 Solo DSP System with plugins:<br>
+                                1176LN Classic Limiting Amplifier<br>
+                                1176SE Classic Limiting Amplifier<br>
+                                BOSS® CE-1 Chorus Ensemble<br>
+                                Cambridge EQ<br>
+                                CS-1 Channel Strip<br>
+                                Fairchild® 670 Compressor<br>
+                                Precision Multiband Compressor<br>
+                                Pultec EQP-1A Legacy<br>
+                                Pultec Pro EQ Legacy<br>
+                                RealVerb Pro Custom Room Modeler<br>
+                                Teletronix® LA-2A Classic Leveling Amplifier<br>
+                                Teletronix® LA-3A Classic Audio Leveler
+                            </p>
+                            <p>
+                                Waves 9 Mercury <br>Sound Perfomance Lab Plugins
+                            </p>
+                            <p>
+                                Apple Logic Pro
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Outline -->
+
+    <div class="container">
+        <div class="row">
+            <div class="out_line"></div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+
+    <div id="testimonials" class="container-fluid testimonials">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <h2 class="labels">Testimonials</h2>
+                            <ul>
+                                <li>
+                                    <img src="img/testimotion_ico_1.jpg" alt="">
+                                    <p><b>Digital Department (Mistique Music / Suffused Music):</b> Big thanks for mastering my track Eccentric, very quickly and professional! its groovy now.</p>
+                                </li>
+                                <li>
+                                    <img src="img/testimotion_ico_2.jpg" alt="">
+                                    <p><b>Welcome Music Record Label:</b> We know Anton as a professional, always use his mastering services. happy to cooperate!</p>
+                                </li>
+                                <li>
+                                    <img src="img/testimotion_ico_3.jpg" alt="">
+                                    <p><b>Distorted Robocops:</b> This guy’s a legend, pushed the volume right there and added power and crispness to my sound without losing clarity. Great job, recommended!</p>
+                                </li>
+                                <li>
+                                    <img src="img/testimotion_ico_4.jpg" alt="">
+                                    <p><b>Pledge (L2S, Bass Machine):</b> Have to say those are the best masters I’ve ever had of my music. Thanks alot.</p>
+                                </li>
+                                <li>
+                                    <img src="img/testimotion_ico_5.jpg" alt="">
+                                    <p><b>Agzamoff (Bass Machine):</b> Great masters of my Soundbwoy Addiction remixes of «Major Hurdles» by Beatloafe. Phat!</p>
+                                </li>
+                                <li>
+                                    <img src="img/testimotion_ico_6.jpg" alt="">
+                                    <p class="testimotion__last_child"><b>n R (owner, Alien Technology/Bass Machine HQ label collective):</b> We at Alien Technology HQ used Rise Up Mastering many times for releases and mix compilations on our labels Alien Technology, Bass Machine and others, and always received great results and very fast response. Best mastering we had for the money! Will continue working with them in the future.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="ftr_left">
+                        <img src="img/logo_ftr.png" alt="">
+                        <p>
+                            Follow us 
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="http://vk.com">
+                                    VKontakte
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://facebook.com">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://soundcloud.com">
+                                    Soundcloud
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ftr_right">
+                        <h3>
+                            Contact us
+                        </h3>
+                        <form id="feedback_form_2" name="ajaxform" action="" method="POST" >
+                            <input class="name" name="name" type="name" placeholder="Your name" required="required">
+                            <input class="phone" name="phone" type="number" placeholder="Your phone number" required="required">
+                            <input class="message" name="message" type="text" placeholder="Your message" required="required">
+                            <input class="send" type="submit" value="Send message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script src="js/parallax.js"></script>
+
+    <script src="js/feedback.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/transition.js"></script>
+
+    <script src="js/menu.fixed.js"></script>
+
+    <script src="js/modal.js"></script>
+
+    
+    
+<!-- End Document
+================================================== -->
+
+</body>
+</html>
